@@ -1,0 +1,16 @@
+/* Global style */
+
+body {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 200%;
+    text-align: center;
+    color: black;
+}
