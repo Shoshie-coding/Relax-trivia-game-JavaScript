@@ -7,35 +7,71 @@
     <meta name="description" content="This is a website where people can play a fun trivia game">
     <meta name="keywords" content="game, trivia game, history, geography, movies">
 
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Open+Sans&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Play trivia game</title>
 </head>
 
 <body>
-    <h1>Relax and play this awesome trivia game!</h1>
+    <!--Code-->
+    <div class="main-container">
+        <div id="home" class="flex-column flex-center">
+            <h1>Relax and play a trivia game</h1>
+            <a href="/game.html" class="btn">Play game</a>
+            <a href="/highscores.html" class="btn" id="highscore-btn">High scores</a>
+        </div>
+    </div>
     
-    <div id="instructions">
-        <h2>It's really easy to play this trivia game</h2>
-        <ol>
-            <li>Click Play button</li>
-            <li>Select difficulty level</li>
-            <li>Answer as many questions as you can</li>
+    <!--Game area-->
+    <div class="main-container">
+        <div id="game" class="justify-center" "flex-column">
+            <div id="hud">
+                <div class="hud-item">
+                    <p id="progress-text" class="hud-prefix">
+                        Question
+                    </p>
+                    <div id="progress-bar">
+                        <div id="progress-bar-full"></div>
+                    </div>
+                    <div class="hud-item">
+                        <p class="hud-prefix">
+                            Score
+                        </p>
+                        <h1 class="hud-main-text" id="score">
+                            0
+                        </h1>
+                    </div>
+               </div>
+            </div>
+            <h1 id="question">What is the answer</h1>
+            <div class="choice-container">
+                <p class="choice-prefix">A</p>
+                <p class="choice-text" data-number="1">Choice</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">B</p>
+                <p class="choice-text" data-number="2">Choice 2</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">C</p>
+                <p class="choice-text" data-number="3">Choice 3</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">D</p>
+                <p class="choice-text" data-number="4">Choice 4</p>
+            </div>
+        </div>
 
-        </ol>
+
+
     </div>
 
-    <div id="game-area">
-        <button type="button" class="btn">Play game!</button>
 
-    </div>
-
+    
     
 
 
-    
+
+
 </body>
 </html>

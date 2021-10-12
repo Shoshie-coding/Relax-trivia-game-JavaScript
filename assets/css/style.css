@@ -1,7 +1,19 @@
+<!--Google Fonts-->
+@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Open+Sans&display=swap");
+
+
 /* Global style */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 120%;
+
+}
+
 body {
-    background-color: white;
+    background-color: #728183;
     font-family: 'Open Sans', sans-serif;
     color: black;
     text-align: center;
@@ -11,6 +23,202 @@ body {
 h1 {
     font-family: 'Love Ya Like A Sister', cursive;
     font-size: 200%;
+    margin: 50px 50px;
+    letter-spacing: 3px;
     text-align: center;
     color: black;
 }
+
+h2 {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 150%;
+    text-align: center;
+    color: white;
+    margin: 50px 50px;
+    letter-spacing: 3px;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    font-size: 2rem;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #b3e5d6;
+    background: linear-gradient(90deg, rgba(140,84,113,1) 32%, rgba(140,84,113,1) 100%);
+    border-radius: 10px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    transition: transform 150ms;
+    transform: scale(1.03);
+
+}
+
+.btn[disabled] :hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#highscore-btn {
+    background: linear-gradient(90deg, rgba(250,242,161,1) 32%, rgba(250,242,161,1) 100%);
+
+}
+
+#highscore-btn {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+/* Game area styling */
+#game {
+    color: white;
+}
+
+.choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 5px;
+    background: rgba(140,84,113,1);
+    min-width: 80rem;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow:  0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+.choice.prefix {
+    padding: 2rem 2.5rem;
+    color: white;
+
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+}
+
+.correct {
+    background: linear-gradient(32deg, rgba(0,114,0,1) 0%, rgba(250,242,161,1) 100%);
+
+
+}
+
+.incorrect {
+    background: linear-gradient(32deg, rgba(201,3,10,1) 0%, rgba(250,242,161,1) 100%);
+
+}
+
+/* Heads up display */
+#hud {
+    display: flex ;
+    justify-content: space-between;
+
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.hud-main-text {
+    text-align: center;
+    height: 3rem;
+
+
+}
+
+#progress-bar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid white;
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progress-bar-full {
+    height: 100%;
+    background: white;
+    width: 0%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .choice-container {
+        min-width: 40rem;
+
+    }
+    
+}
+
+
+
+/* 
+#instructions ol {
+    display: inline-block;
+}
+
+#instructions li {
+    list-style-position: inside;
+    letter-spacing: 4px;
+    font-size: 110%;
+    display: inline-block;
+    margin: 20px 50px 20px 50px;
+} */
