@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: #728183;
+    background-color: white;
     font-family: 'Open Sans', sans-serif;
     color: black;
     text-align: center;
@@ -33,9 +33,9 @@ h1 {
 
 h2 {
     font-family: 'Love Ya Like A Sister', cursive;
-    font-size: 150%;
+    font-size: 200%;
     text-align: center;
-    color: white;
+    color: black;
     margin: 50px 50px;
     letter-spacing: 3px;
 }
@@ -105,20 +105,27 @@ h2 {
 .grid-category-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    grid-template-rows: 300px 300px;
     grid-gap: 10px;
     padding: 10px;
+    align-content: center;
+    
 }
 
 .grid-category-container > div {
-    background-color: white;
-    border: 1px solid black;
+   
+    
     text-align: center;
     font-size: 30px;
+   
 }
 
-
-
-
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
 
 
 /* High score area *********************************/
@@ -137,7 +144,7 @@ h2 {
 
 /* Game area styling */
 #game {
-    color: white;
+    color: black;
 }
 
 .choice-container {
@@ -200,7 +207,7 @@ h2 {
 #progress-bar {
     width: 20rem;
     height: 3rem;
-    border: 0.2rem solid white;
+    border: 0.2rem solid black;
     margin-top: 2rem;
     border-radius: 50px;
     overflow: hidden;
@@ -208,7 +215,7 @@ h2 {
 
 #progress-bar-full {
     height: 100%;
-    background: white;
+    background: black;
     width: 0%;
 
 }
