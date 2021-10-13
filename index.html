@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <!--Code-->
+    <!-----------------Score area------------------------>
     <div class="main-container">
         <div id="home" class="flex-column flex-center">
             <h1>Relax and play a trivia game</h1>
@@ -22,14 +22,33 @@
         </div>
     </div>
     
-    <!--Game area-->
+    <!------------Grid category area--------------------->
+    <h2>Pick a category</h2>
+    <div class="grid-category-container">
+        
+        <div id="category-history" class="text-center justify center">
+            <p>History</p>      
+        </div>
+        <div id="category-books" class="text-center justify-center">
+            <p>Literature</p>
+        </div>
+        <div id="category-geography" class="text-center justify-center">
+            <p>Geography</p>
+        </div>
+        <div id="category-film" class="text-center justify-center">
+            <p>Movies</p>
+        </div>
+
+    </div>
+
+   
+
+    <!--------------------Game area--------------------------->
     <div class="main-container">
         <div id="game" class="justify-center" "flex-column">
             <div id="hud">
                 <div class="hud-item">
-                    <p id="progress-text" class="hud-prefix">
-                        Question
-                    </p>
+                    <p id="progress-text" class="hud-prefix">Question</p>
                     <div id="progress-bar">
                         <div id="progress-bar-full"></div>
                     </div>
