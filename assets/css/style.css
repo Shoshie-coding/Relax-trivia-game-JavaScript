@@ -52,6 +52,8 @@ h2 {
 
 }
 
+
+
 .flex-column {
     display: flex;
     flex-direction: column;
@@ -128,14 +130,14 @@ h2 {
 }
 
 
-/* High score area *********************************/
+/* Score area *********************************/
 
-#highscore-btn {
+#score-btn {
     background: linear-gradient(90deg, rgba(250,242,161,1) 32%, rgba(250,242,161,1) 100%);
 
 }
 
-#highscore-btn:hover {
+#score-btn:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
     transition: transform 150ms;
     transform: scale(1.03);
@@ -187,7 +189,8 @@ h2 {
 /* Heads up display */
 #hud {
     display: flex ;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 
 }
 
