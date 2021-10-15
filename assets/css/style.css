@@ -173,12 +173,12 @@ h2 {
 }
 
 .correct {
-    background: linear-gradient(32deg, rgba(0,114,0,1) 0%, rgba(250,242,161,1) 100%);
+    background-color: #47a025;
 
 }
 
 .incorrect {
-    background: linear-gradient(32deg, rgba(201,3,10,1) 0%, rgba(250,242,161,1) 100%);
+    background-color: #d00000;
 
 }
 

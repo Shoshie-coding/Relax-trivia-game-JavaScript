@@ -67,8 +67,8 @@ getNewQuestion = () => {
 
     });
 
-    availableQuestions.splice(QuestionIndex, 1);
-    acceptingAnswers = true;
+    availableQuestions.splice(questionIndex, 1);
+    acceptAnswers = true;
 
 };
 
@@ -79,11 +79,27 @@ choices.forEach((choice) => {
         acceptAnswers = false;
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset['number'];
-        getNewQuestion();
-    });
-});
 
-startGame();
+        const classToApply =
+            selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
+
+            selectedChoice.parentElement.classList.add(classToApply);
+
+            setTimeout(() => {
+                selectedChoice.parentElement.classList.remove(classToApply);
+                getNewQuestion();
+
+            }, 2000);
+        });
+
+    });
+
+
+    startGame();
+
+
+
+// Add animations for correct and incorrect answers 
 
 
 
