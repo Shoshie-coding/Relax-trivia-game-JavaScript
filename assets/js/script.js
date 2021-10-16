@@ -10,35 +10,136 @@ let acceptAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
-
 let questions = [{
-        question: "Which of these countries remained neutral during World War II?",
-        choice1: "United Kingdom",
-        choice2: "France",
-        choice3: "Italy",
-        choice4: "Switzerland",
-        answer: 4,
-    },
+    question: "Which of these countries remained neutral during World War II?",
+    choice1: "United Kingdom",
+    choice2: "France",
+    choice3: "Italy",
+    choice4: "Switzerland",
+    answer: 4,
+},
 
-    {
-        question: "In the War of the Pacific (1879 - 1883), Bolivia lost its access to the Pacific Ocean after being defeated by which South American country?",
-        choice1: "Chile",
-        choice2: "Peru",
-        choice3: "Brazil",
-        choice4: "Argentina",
-        answer: 4,
+{
+    question: "In the War of the Pacific (1879 - 1883), Bolivia lost its access to the Pacific Ocean after being defeated by which South American country?",
+    choice1: "Chile",
+    choice2: "Peru",
+    choice3: "Brazil",
+    choice4: "Argentina",
+    answer: 4,
 
-    },
+},
 
-    {
-        question: " How do you write 'Hello World' in an alert box?",
-        choice1: "msgBox('Hello World');",
-        choice2: "alertBox('Hello World');",
-        choice3: "msg('Hello World');",
-        choice4: "alert('Hello World');",
-        answer: 4,
-    },
+{
+    question: " How do you write 'Hello World' in an alert box?",
+    choice1: "msgBox('Hello World');",
+    choice2: "alertBox('Hello World');",
+    choice3: "msg('Hello World');",
+    choice4: "alert('Hello World');",
+    answer: 4,
+},
 ];
+
+const urlParams = new URLSearchParams(window.location.search);
+const myParam = urlParams.get('cat');
+
+console.log(myParam);
+switch (myParam) {
+    case "literature":
+        questions = [{
+            question: "What is Ron Weasley&#039;s middle name?",
+            choice1: "Bilius",
+            choice2: "Arthur",
+            choice3: "John",
+            choice4: "Dominic",
+            answer: 1,
+        },
+    
+        {
+            question: "what?",
+            choice1: "Chile",
+            choice2: "Peru",
+            choice3: "Brazil",
+            choice4: "Argentina",
+            answer: 4,
+    
+        },
+    
+        {
+            question: " are?",
+            choice1: "msgBox('Hello World');",
+            choice2: "alertBox('Hello World');",
+            choice3: "msg('Hello World');",
+            choice4: "alert('Hello World');",
+            answer: 4,
+        },
+    ];
+        break;
+    case "movies":
+        questions = [{
+            question: "bla bla bla",
+            choice1: "United Kingdom",
+            choice2: "France",
+            choice3: "Italy",
+            choice4: "Switzerland",
+            answer: 4,
+        },
+    
+        {
+            question: "In the War of the Pacific (1879 - 1883), Bolivia lost its access to the Pacific Ocean after being defeated by which South American country?",
+            choice1: "Chile",
+            choice2: "Peru",
+            choice3: "Brazil",
+            choice4: "Argentina",
+            answer: 4,
+    
+        },
+    
+        {
+            question: " How do you write 'Hello World' in an alert box?",
+            choice1: "msgBox('Hello World');",
+            choice2: "alertBox('Hello World');",
+            choice3: "msg('Hello World');",
+            choice4: "alert('Hello World');",
+            answer: 4,
+        },
+        ];
+        break;
+        case "geography":
+            questions = [{
+                question: "bla bla bla",
+                choice1: "United Kingdom",
+                choice2: "France",
+                choice3: "Italy",
+                choice4: "Switzerland",
+                answer: 4,
+            },
+        
+            {
+                question: "In the War of the Pacific (1879 - 1883), Bolivia lost its access to the Pacific Ocean after being defeated by which South American country?",
+                choice1: "Chile",
+                choice2: "Peru",
+                choice3: "Brazil",
+                choice4: "Argentina",
+                answer: 4,
+        
+            },
+        
+            {
+                question: " How do you write 'Hello World' in an alert box?",
+                choice1: "msgBox('Hello World');",
+                choice2: "alertBox('Hello World');",
+                choice3: "msg('Hello World');",
+                choice4: "alert('Hello World');",
+                answer: 4,
+            },
+            ];
+            break;        
+    default:
+        break;
+}
+
+
+
 
 // Constants
 const CORRECT_BONUS = 10;
