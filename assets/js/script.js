@@ -1,7 +1,7 @@
 // Game variables
 
 const question = document.getElementById('question');
-const choices = Array.from(document.getElementsByClassName('choice-text'));
+const choices = Array.from(document.getElementByClassName('choice-text'));
 const questionCounterText = document.getElementById("question-counter");
 const scoreText = document.getElementById("score")
 
