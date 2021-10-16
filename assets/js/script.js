@@ -72,6 +72,8 @@ getNewQuestion = () => {
 
 };
 
+// Add animations for correct and incorrect answers 
+
 choices.forEach((choice) => {
     choice.addEventListener('click', (e) => {
         if (!acceptAnswers) return;
@@ -99,7 +101,6 @@ choices.forEach((choice) => {
 
 
 
-// Add animations for correct and incorrect answers 
 
 
 

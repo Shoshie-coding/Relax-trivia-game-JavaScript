@@ -18,7 +18,7 @@ body {
 /* Headings */
 h1 {
     font-family: 'Scheherazade New', serif;
-    font-size: 150%;
+    font-size: 200%;
     margin: 50px 50px;
     padding-bottom: 30px;
     padding-top: 10px;
@@ -192,14 +192,13 @@ h2 {
 
 .hud-prefix {
     text-align: center;
-    font-size: 2rem;
+    font-size: 30px;
 
 }
 
 .hud-main-text {
     text-align: center;
     height: 3rem;
-
 
 }
 
