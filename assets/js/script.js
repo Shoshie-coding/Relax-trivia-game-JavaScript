@@ -2,6 +2,8 @@
 
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
+const questionCounterText = document.getElementById("question-counter");
+const scoreText = document.getElementById("score")
 
 let currentQuestion = {};
 let acceptAnswers = false;
@@ -56,7 +58,13 @@ getNewQuestion = () => {
         return window.location.assign('/end.html');
 
     }
+
+    // Automatically update the questionCounter to show how many questions are left 
     questionCounter++;
+    questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
+
+
+
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
