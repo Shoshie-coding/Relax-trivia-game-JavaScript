@@ -1,7 +1,7 @@
 // Game variables
 
 const question = document.getElementById('question');
-const choices = Array.from(document.getElementByClassName('choice-text'));
+const choices = Array.from(document.getElementsByClassName('choice-text'));
 const questionCounterText = document.getElementById("question-counter");
 const scoreText = document.getElementById("score")
 
@@ -56,7 +56,7 @@ getNewQuestion = () => {
         //Save score in local storage
         localStorage.setItem("mostRecentScore", score);
         // Go to end page
-        return window.location.assign('/end.html');
+        return window.location.assign('/end-page.html');
 
     }
 
