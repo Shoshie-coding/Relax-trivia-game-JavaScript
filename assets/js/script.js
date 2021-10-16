@@ -11,8 +11,7 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-let questions = [
-    {
+let questions = [{
         question: "Which of these countries remained neutral during World War II?",
         choice1: "United Kingdom",
         choice2: "France",
@@ -20,7 +19,7 @@ let questions = [
         choice4: "Switzerland",
         answer: 4,
     },
-     
+
     {
         question: "In the War of the Pacific (1879 - 1883), Bolivia lost its access to the Pacific Ocean after being defeated by which South American country?",
         choice1: "Chile",
@@ -40,7 +39,7 @@ let questions = [
         answer: 4,
     },
 ];
-       
+
 // Constants
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 3;
@@ -62,7 +61,6 @@ getNewQuestion = () => {
     // Automatically update the questionCounter to show how many questions are left 
     questionCounter++;
     questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
-
 
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
@@ -93,27 +91,26 @@ choices.forEach((choice) => {
         const classToApply =
             selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
-            selectedChoice.parentElement.classList.add(classToApply);
+        if (classToApply === "correct") {
+            incrementScore(CORRECT_BONUS);
+        }    
 
-            setTimeout(() => {
-                selectedChoice.parentElement.classList.remove(classToApply);
-                getNewQuestion();
 
-            }, 2000);
-        });
+        selectedChoice.parentElement.classList.add(classToApply);
 
+        setTimeout(() => {
+            selectedChoice.parentElement.classList.remove(classToApply);
+            getNewQuestion();
+
+        }, 1700);
     });
 
-
-    startGame();
-
+});
 
 
+incrementScore = num => {
+    score += num;
+    scoreText.innerText = score;
+}
 
-
-
-
-
-
-
-
+startGame();
