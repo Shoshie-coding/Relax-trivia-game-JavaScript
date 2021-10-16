@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a website where people can play a fun trivia game">
+    <meta name="keywords" content="game, trivia game, history, geography, movies">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!----------------Google fonts------------------------->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Scheherazade+New&display=swap" rel="stylesheet">
+
+    <title>End game</title>
+</head>
+<!----------------------End page--------------------------------------->
+<div class="main-container">
+    <div id="end-game" class="flex-center flex-column">
+        <h1 id="finalScore"></h1>
+        <form>
+            <input type="text" name="username" id="username" placeholder="Username">
+            <button type="submit" class="btn" id="save-score-btn" 
+            onclick="saveScore(event)" disabled>
+            Save
+            </button>
+        </form>
+        <a class="btn" href="/game.html">Play again</a>
+        <a class="btn" href="/">Go to Home page</a>
+    
+    </div>
+
+</div>
+
+<script src="assets/js/end-page.js"></script>
+
+</body>
+
+</html>
