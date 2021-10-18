@@ -204,7 +204,6 @@ choices.forEach((choice) => {
             incrementScore(CORRECT_BONUS);
         }    
 
-
         selectedChoice.parentElement.classList.add(classToApply);
 
         setTimeout(() => {
