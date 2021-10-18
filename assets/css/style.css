@@ -13,6 +13,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: black;
     text-align: center;
+    margin: 10px;
 }
 
 /* Headings */
@@ -35,6 +36,7 @@ h2 {
     color: black;
     margin: 50px 50px;
     letter-spacing: 3px;
+    color: #594351;
 }
 
 .main-container {
@@ -240,21 +242,28 @@ input::placeholder {
 
 
 
+@media screen and (max-width: 1024px) {
 
-
-
-
-
-
-
-
-
-@media screen and (max-width: 768px) {
-    .choice-container {
-        min-width: 40rem;
-
+    .grid-category-container {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-gap: 15px;
+        
     }
     
+    .gallery-image {
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+        
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 300%;
+    }
+
 }
 
 

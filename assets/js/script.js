@@ -7,6 +7,14 @@ const scoreText = document.getElementById("score")
 const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get('cat');
 
+// add event to play button
+
+// var goToCategory = document.getElementById("pick-category");
+// var categoryButtonClick = function() {
+//     goToCategory.
+// }
+
+
 // Sets the questions for each category
 
 let currentQuestion = {};
