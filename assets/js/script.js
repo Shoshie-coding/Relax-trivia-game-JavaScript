@@ -69,38 +69,60 @@ let questions = [{
     answer: 4,
 
 },
-
 ];
 
 switch (myParam) {
     case "literature":
         questions = [{
-            question: "What is Ron Weasley&#039;s middle name?",
-            choice1: "Bilius",
-            choice2: "Arthur",
-            choice3: "John",
-            choice4: "Dominic",
+            question: "Who wrote 'A tale of Two Cities'",
+            choice1: "Charles Dickens",
+            choice2: "Charles Darwin",
+            choice3: "Mark Twain",
+            choice4: "Roald Dahl",
             answer: 1,
         },
     
         {
-            question: "what?",
-            choice1: "Chile",
-            choice2: "Peru",
-            choice3: "Brazil",
-            choice4: "Argentina",
-            answer: 4,
+            question: "In the Lord of the Rings, who is the father of the dwarf Gimli?",
+            choice1: "Bombur",
+            choice2: "Gloin",
+            choice3: "Thorin Oakenshield",
+            choice4: "Dwalin",
+            answer: 2,
     
         },
     
         {
-            question: " are?",
-            choice1: "msgBox('Hello World');",
-            choice2: "alertBox('Hello World');",
-            choice3: "msg('Hello World');",
-            choice4: "alert('Hello World');",
-            answer: 4,
+            question: "What position does Harry Potter play in Quidditch?",
+            choice1: "Beater",
+            choice2: "Chaser",
+            choice3: "Seeker",
+            choice4: "Keeper",
+            answer: 3,
         },
+
+        {
+            question: "By what nickname is Jack Dawkins known in the Charles Dickens novel, 'Oliver Twist'?",
+            choice1: "Fagin",
+            choice2: "Mr. Fang",
+            choice3: "Jack Sparrow",
+            choice4: "The Artful Dodger",
+            answer: 4,
+
+        }
+
+        {
+            question: "Who wrote the children's story 'The Little Match Girl'?",
+            choice1: "Hans Christian Andersen",
+            choice2: "Charles Dickens",
+            choice3: "Lewis Carroll",
+            choice4: "Oscar Wilde",
+            answer: 1,
+        }
+
+
+
+
     ];
         break;
     case "movies":
