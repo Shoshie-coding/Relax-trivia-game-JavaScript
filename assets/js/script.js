@@ -4,6 +4,10 @@ const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const questionCounterText = document.getElementById("question-counter");
 const scoreText = document.getElementById("score")
+const urlParams = new URLSearchParams(window.location.search);
+const myParam = urlParams.get('cat');
+
+// Sets the questions for each category
 
 let currentQuestion = {};
 let acceptAnswers = false;
@@ -39,10 +43,6 @@ let questions = [{
 },
 ];
 
-const urlParams = new URLSearchParams(window.location.search);
-const myParam = urlParams.get('cat');
-
-console.log(myParam);
 switch (myParam) {
     case "literature":
         questions = [{
@@ -137,8 +137,6 @@ switch (myParam) {
     default:
         break;
 }
-
-
 
 
 // Constants
