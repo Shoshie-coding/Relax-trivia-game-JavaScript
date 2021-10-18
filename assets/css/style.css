@@ -263,17 +263,17 @@ input::placeholder {
 
 }
 
+/* Styling for scores page */
 
+#highScoresList {
+    list-style: none;
+    padding-left: 0;
+    margin: 10px;
 
-/* 
-#instructions ol {
-    display: inline-block;
 }
 
-#instructions li {
-    list-style-position: inside;
-    letter-spacing: 4px;
-    font-size: 110%;
-    display: inline-block;
-    margin: 20px 50px 20px 50px;
-} */
+.high-score {
+    font-size: 100%;
+    margin-bottom: 10px;
+}
+
