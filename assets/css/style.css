@@ -162,8 +162,7 @@ p {
     width: 100%;
     font-size: 85%;
     background: white;
-    border: 0.1rem solid #594351;
-   
+    border: 0.1rem solid #594351; 
 }
 
 .choice-container:hover {
@@ -180,10 +179,13 @@ p {
 
 }
 
+.choice-prefix > p {
+    margin: 0;
+}
+
 .choice-text {
     padding: 1.5rem;
     width: 100%;
-    
 }
 
 .correct {
@@ -213,7 +215,8 @@ p {
 .hud-main-text {
     text-align: center;
     font-size: 120%;
-    color: #593E2E;
+    color: #425A98;
+    font-weight: 400;
 
 }
 
