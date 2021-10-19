@@ -7,14 +7,6 @@ const scoreText = document.getElementById("score")
 const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get('cat');
 
-// add event to play button
-
-// var goToCategory = document.getElementById("pick-category");
-// var categoryButtonClick = function() {
-//     goToCategory.
-// }
-
-
 // Sets the questions for each category
 
 let currentQuestion = {};
@@ -132,64 +124,68 @@ switch (myParam) {
             choice4: "Brian Thompson",
             answer: 1,
         },
-    
+
         {
-            question: "In the War of the Pacific (1879 - 1883), Bolivia lost its access to the Pacific Ocean after being defeated by which South American country?",
-            choice1: "Chile",
-            choice2: "Peru",
-            choice3: "Brazil",
-            choice4: "Argentina",
-            answer: 4,
-    
+            question: "What was Dorothy's surname in 'The Wizard Of Oz'?",     
+            choice1: "Perkins", 
+            choice2: "Gale",
+            choice3: "Day",
+            choice4: "Parker",
+            answer: 2,
         },
-    
+        
         {
-            question: " How do you write 'Hello World' in an alert box?",
-            choice1: "msgBox('Hello World');",
-            choice2: "alertBox('Hello World');",
-            choice3: "msg('Hello World');",
-            choice4: "alert('Hello World');",
+            question: "Which 1958 movie starred Kirk Douglas and Tony Curtis as half-brothers Einar and Eric?",
+            choice1: "The Long Ships",
+            choice2: "Prince Valiant",
+            choice3: "The Vikings ",
+            choice4: "Spartacus",
+            answer: 3,
+        },
+
+        {
+
+            question: "In which 1973 film does Yul Brynner play a robotic cowboy who malfunctions and goes on a killing spree?",
+            choice1: "Runaway",
+            choice2: "Android",
+            choice3: "The Terminators",
+            choice4: "Westworld",
             answer: 4,
         },
+
+        {
+            question: "In the 1971 film 'Willy Wonka & the Chocolate Factory', who played Willy Wonka?",
+            choice1: "Gene Wilder",
+            choice2: "Shia LeBouf",
+            choice3: "Peter Ostrum",
+            choice4: "Johnny Depp",
+            answer: 1,
+        }
+
         ];
+
         break;
-        case "geography":
-            questions = [{
-                question: "bla bla bla",
-                choice1: "United Kingdom",
-                choice2: "France",
-                choice3: "Italy",
-                choice4: "Switzerland",
-                answer: 4,
-            },
-        
-            {
-                question: "In the War of the Pacific (1879 - 1883), Bolivia lost its access to the Pacific Ocean after being defeated by which South American country?",
-                choice1: "Chile",
-                choice2: "Peru",
-                choice3: "Brazil",
-                choice4: "Argentina",
-                answer: 4,
-        
-            },
-        
-            {
-                question: " How do you write 'Hello World' in an alert box?",
-                choice1: "msgBox('Hello World');",
-                choice2: "alertBox('Hello World');",
-                choice3: "msg('Hello World');",
-                choice4: "alert('Hello World');",
-                answer: 4,
-            },
-            ];
+    case "geography":
+        questions = [{
+            question: "Where is the area commonly known as the Bermuda Triangle?",
+            choice1: "North Atlantic Ocean, between Florida and Puerto Rico",
+            choice2: "North Pacific Ocean, between Japan and the USA", 
+            choice3: "In the Caribbean Sea",
+            choice4: "South Pacific Ocean, far off Chile",
+            answer: 1,
+        }
+
+        ];
             break;        
     default:
         break;
 }
 
 // Constants
+// Allows maximum 5 questions per round per user
+// Gives 10 points per each correct question
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 3;
+const MAX_QUESTIONS = 5;
 
 startGame = () => {
     questionCounter = 0;
