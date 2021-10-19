@@ -13,7 +13,7 @@ body {
     font-family: 'Scheherazade New', serif;
     color: #594351;
     text-align: center;
-    margin: 10px;
+    
 }
 
 /* Headings */
@@ -292,3 +292,43 @@ input::placeholder {
     margin-bottom: 10px;
 }
 
+/* Footer */
+
+.main-footer {
+    background-color: #D9D9D9;
+    font-size: 115%;
+    font-weight: 400;
+    font-family: 'Scheherazade New', serif;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    margin: 0;
+    padding: 40px 0px;
+}
+
+.main-footer li {
+    list-style-type: none;
+    letter-spacing: 4px;
+    padding: 10px 10px;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.main-footer ul {
+    display: table;
+    list-style-type: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+}
+
+.main-footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-footer a:hover {
+    color: #403726;
+    border-bottom: 2px solid #403521;
+}
