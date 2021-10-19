@@ -224,6 +224,8 @@ getNewQuestion = () => {
 };
 
 // Add animations for correct and incorrect answers 
+// If the answer is incorrect, go to each choice and apply the correct class
+// Removes the correct class  
 
 choices.forEach((choice) => {
     choice.addEventListener('click', (e) => {
@@ -232,18 +234,29 @@ choices.forEach((choice) => {
         acceptAnswers = false;
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset['number'];
-
+        var correctAnswer = false;
         const classToApply =
             selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
         if (classToApply === "correct") {
             incrementScore(CORRECT_BONUS);
         }    
+        if (classToApply === "incorrect") { 
+           
+            choices.forEach((c) => {
+                if (c.dataset['number'] == currentQuestion.answer) {
+                    correctAnswer = c;
+                    correctAnswer.parentElement.classList.add("correct");
+                }
 
+            });
+        }
         selectedChoice.parentElement.classList.add(classToApply);
 
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
+            if (correctAnswer)
+                correctAnswer.parentElement.classList.remove("correct");
             getNewQuestion();
 
         }, 1700);
