@@ -17,24 +17,27 @@ username.addEventListener("keyup", () => {
     saveScoreBtn.disabled = !username.value;
 });
 
-saveHighScore = (e) => {
+const saveHighScore = (e) => {
     e.preventDefault();
+    const scoreX = {
+        score: mostRecentScore,
+        name: username.value
+    };
+    
+    highScores.push(scoreX);
+    // Lets only 5 scores to be stored in local storage 
+    highScores.sort((a, b) => b.score - a.score);
+     //cut off everything at index 5
+    highScores.splice(MAX_HIGH_SCORES); 
+    
+    
+    localStorage.setItem('highScores', JSON.stringify(highScores));
+
+    window.location.assign('/');
 };
 
-const scoreX = {
-    score: mostRecentScore,
-    name: username.value
-};
 
-highScores.push(scoreX);
-// Lets only 5 scores to be stored in local storage 
-highScores.sort((a, b) => b.score - a.score);
- //cut off everything at index 5
-highScores.splice(5); 
-
-
-localStorage.setItem('highScores', JSON.stringify(highScores));
-window.location.assign('/');
+// 
 
 
 

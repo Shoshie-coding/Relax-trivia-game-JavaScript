@@ -3,7 +3,7 @@
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const questionCounterText = document.getElementById("question-counter");
-const scoreText = document.getElementById("score")
+const scoreText = document.getElementById("score");
 const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get('cat');
 
@@ -187,14 +187,14 @@ switch (myParam) {
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 5;
 
-startGame = () => {
+const startGame = () => {
     questionCounter = 0;
     score = 0;
-    availableQuestions = [...questions]
+    availableQuestions = [...questions];
     getNewQuestion();
 };
 
-getNewQuestion = () => {
+const getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         //Save score in local storage
         localStorage.setItem("mostRecentScore", score);
@@ -213,7 +213,7 @@ getNewQuestion = () => {
     question.innerText = currentQuestion.question;
 
     choices.forEach((choice) => {
-        const number = choice.dataset['number'];
+        const number = choice.dataset.number;
         choice.innerText = currentQuestion['choice' + number];
 
     });
@@ -233,7 +233,7 @@ choices.forEach((choice) => {
 
         acceptAnswers = false;
         const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset['number'];
+        const selectedAnswer = selectedChoice.dataset.number;
         var correctAnswer = false;
         const classToApply =
             selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
@@ -244,7 +244,7 @@ choices.forEach((choice) => {
         if (classToApply === "incorrect") { 
            
             choices.forEach((c) => {
-                if (c.dataset['number'] == currentQuestion.answer) {
+                if (c.dataset.number == currentQuestion.answer) {
                     correctAnswer = c;
                     correctAnswer.parentElement.classList.add("correct");
                 }
@@ -264,9 +264,9 @@ choices.forEach((choice) => {
 
 });
 
-incrementScore = num => {
+const incrementScore = num => {
     score += num;
     scoreText.innerText = score;
-}
+};
 
 startGame();
