@@ -109,7 +109,7 @@ switch (myParam) {
             choice4: "The Artful Dodger",
             answer: 4,
 
-        }
+        },
 
         {
             question: "Who wrote the children's story 'The Little Match Girl'?",
@@ -121,18 +121,16 @@ switch (myParam) {
         }
 
 
-
-
     ];
         break;
     case "movies":
         questions = [{
-            question: "bla bla bla",
-            choice1: "United Kingdom",
-            choice2: "France",
-            choice3: "Italy",
-            choice4: "Switzerland",
-            answer: 4,
+            question: "Who voiced the character Draco in the 1996 movie 'DragonHeart'?",
+            choice1: "Sean Connery",
+            choice2: "Dennis Quaid",
+            choice3: "Pete Postlethwaite",
+            choice4: "Brian Thompson",
+            answer: 1,
         },
     
         {
@@ -188,7 +186,6 @@ switch (myParam) {
     default:
         break;
 }
-
 
 // Constants
 const CORRECT_BONUS = 10;
@@ -264,46 +261,3 @@ incrementScore = num => {
 }
 
 startGame();
-
-// End game page 
-const username = document.getElementById('username');
-const saveScoreBtn = document.getElementById('save-score-btn');
-const finalScore = document.getElementById('finalScore');
-const mostRecentScore = localStorage.getItem('mostRecentScore');
-
-const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
-
-// Maximum 5 scores can be stored
-const MAX_HIGH_SCORES = 5;
-
-finalScore.innerText = mostRecentScore;
-
-//Lets user save their score on the end game page
-username.addEventListener("keyup", () => {
-    saveScoreBtn.disabled = !username.value;
-});
-
-saveHighScore = (e) => {
-    e.preventDefault();
-};
-
-// const score = {
-//     score: mostRecentScore,
-//     name: username.value
-// };
-
-highScores.push(score);
-// Lets only 5 scores to be stored in local storage 
-highScores.sort((a, b) => b.score - a.score);
- //cut off everything at index 5
-highScores.splice(5); 
-
-
-localStorage.setItem('highScores', JSON.stringify(highScores));
-window.location.assign('/');
-
-
-
-
-
-
