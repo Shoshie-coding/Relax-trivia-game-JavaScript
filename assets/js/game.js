@@ -173,6 +173,15 @@ switch (myParam) {
             choice3: "In the Caribbean Sea",
             choice4: "South Pacific Ocean, far off Chile",
             answer: 1,
+        },
+
+        {
+            question:
+            choice1:
+            choice2: 
+            choice3: 
+            choice4: 
+            answer: 
         }
 
         ];
@@ -199,7 +208,7 @@ const getNewQuestion = () => {
         //Save score in local storage
         localStorage.setItem("mostRecentScore", score);
         // Go to end page
-        return window.location.assign('/end-page.html');
+        return window.location.assign('end-page.html');
 
     }
 
