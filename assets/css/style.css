@@ -222,11 +222,6 @@ table {
   td {
       font-weight: 400;
   }
-  
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
-
 
   #scoresTable {
       margin-bottom: 20px;
