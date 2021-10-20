@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-console.log("boss")
+
 const items = JSON.parse(localStorage.getItem('highScores'));
 const scoresTable =  document.getElementById('scoresTable');
 items.forEach(element => {

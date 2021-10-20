@@ -173,6 +173,42 @@ switch (myParam) {
             choice3: "In the Caribbean Sea",
             choice4: "South Pacific Ocean, far off Chile",
             answer: 1,
+        },
+
+        {
+            question: "What is the name of the capital of Turkey?",
+            choice1: "Istanbul",
+            choice2: "Ankara",
+            choice3: "Izmir",
+            choice4: "Bursa",
+            answer: 2,
+        },
+
+        {
+            question: "Which of the following countries banned the use of personal genetic ancestry tests?",
+            choice1: "Austria",
+            choice2: "Canada",
+            choice3: "Germany",
+            choice4: "Sweden",
+            answer: 3, 
+        },
+
+        {
+            question: "What event led to Liechenstein adding a crown to its flag?",
+            choice1: "Coronation of Prince Johann I Joseph in 1805",
+            choice2: "Charles VI's decree in 1719",
+            choice3: "Signing of the 1862 Constitution of Liechtenstein",
+            choice4: "The 1936 Olympics",
+            answer: 4,
+        },
+
+        {
+            question: "Which German city is located on the River Isar?",
+            choice1: "Munich",
+            choice2: "Berlin",
+            choice3: "Hamburg",
+            choice4: "Dortmund",
+            answer: 1,
         }
 
         ];
