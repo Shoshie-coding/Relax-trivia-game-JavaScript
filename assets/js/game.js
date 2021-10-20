@@ -173,15 +173,6 @@ switch (myParam) {
             choice3: "In the Caribbean Sea",
             choice4: "South Pacific Ocean, far off Chile",
             answer: 1,
-        },
-
-        {
-            question:
-            choice1:
-            choice2: 
-            choice3: 
-            choice4: 
-            answer: 
         }
 
         ];
