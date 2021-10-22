@@ -12,6 +12,7 @@ const MAX_HIGH_SCORES = 5;
 finalScore.innerText = mostRecentScore;
 
 //Lets user save their score on the end game page
+// Code for storing scores on local storage was inspired from James Quick tutorial as per my Readme
 username.addEventListener("keyup", () => {
     saveScoreBtn.disabled = !username.value;
 });
