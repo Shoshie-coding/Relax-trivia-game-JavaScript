@@ -1,4 +1,3 @@
-
 // End game page 
 const username = document.getElementById('username');
 const saveScoreBtn = document.getElementById('save-score-btn');
@@ -23,23 +22,14 @@ const saveHighScore = (e) => {
         score: mostRecentScore,
         name: username.value
     };
-    
+
     highScores.push(scoreX);
     // Lets only 5 scores to be stored in local storage 
     highScores.sort((a, b) => b.score - a.score);
-     //cut off everything at index 5
-    highScores.splice(MAX_HIGH_SCORES); 
-    
-    
+    //Cuts off everything at index 5
+    highScores.splice(MAX_HIGH_SCORES);
+
     localStorage.setItem('highScores', JSON.stringify(highScores));
 
     window.location.assign('./');
 };
-
-
-
-
-
-
-
-
