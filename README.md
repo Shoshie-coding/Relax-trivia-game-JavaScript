@@ -9,58 +9,54 @@ You can view the live website [here](https://shoshie-coding.github.io/Relax-triv
 
 ## **Features**
 ### **Existing Features**
-- **Homepage and navigation menu** 
-The Homepage features the Play game and scores buttons. 
-The header image provides visual stimulation and sets the color theme for the whole website. This theme is present on all the pages of the website providing consistency for the users. 
-The navigation menu is present on all website pages, it allows users to navigate to the Homepage, Category page and Scores page which are the pages of interest for the user. 
-The burger style navigation menu is small enough and seamless enough for the user to access all main pages.
+- **Homepage play and scores buttons** 
+The Homepage features the Play game and scores buttons. This welcomes the user when they first acccess the website and it provides a segway to the actual game. 
 
-![Header image and nav bar screenshot](assets/images/feature-header-nav-bar-screenshot.png) 
+![Main page screenshot](assets/images/homepage-screenshot.png) 
+
+- **Navigation menu and footer**
+The navigation menu and footer are present on all website pages. They allow users to navigate to the Homepage, Category page and Scores page which are the pages of interest for the user. These have the same color to allow the user not be distracted by the styling but be focused on the game. 
+
+![Header and footer screenhot](assets/images/header-footer-screenshot.png) 
 
 - **Pick a category page**
-This page allows the user to pick a category they want to start the game with.
-There are 4 distinct categories
+This page allows the user to pick a category they want to start the game with. There are 4 distinct categories to chose from: history, literature, geography and movies. These are represented by 4 images with similar color pallette that provide a smooth transition into the game. 
 
+![Category page](assets/images/category-page-screenshot.png) 
 
+- **The game page**
+This is where the users can play the game and answer the trivia questions. It features an area on the top that displays question counter and the score, it shows the user the questions they need to answer and 4 options to chose from.
+When the user answers correctly, the correct option turns green. When the user's answer is incorrect, their selection turns red and the correct selection turns green. 
 
-- The **main heading and image** introduce the user to the Hebrew language and the theme of the website. 
-![Main heading and image](assets/images/feature-main-heading-image.png)
+![Game page](assets/images/game-page-screenshot.png)
 
-- The **main points menu** on the Home and Alphabet pages provides a summary of what is discussed on each of these pages and links to those sections.
-![Main points home page](assets/images/feature-main-points-home.png)
-![Main points home page](assets/images/feature-main-points-alphabet.png)
+- **The scores page and end game page**
+The game is designed to store up to 5 scores the users can access from the main homepage as well as from the navigation menu. When the game is finished the users can add a name so the game can be stored in local storage. 
 
-- The **alphabet table** that lists all the letters of the Hebrew alphabet with their pronunciation which is responsive and easy to read on small screen sizes. 
-![Alphabet table](assets/images/feature-alphabet-table.png) 
+![Scores page](assets/images/scores-page-screenshot.png)
+![End page](assets/images/end-page-screenshot.png)
 
-- The **listening and speaking** practice section on the Alphabet page with links to YouTube videos. 
-![Main points home page](assets/images/feature-listening-speaking.png)
-
-- The **two images sorrounded by content** on the Common Hebrew Phrases page
-![First image words page](assets/images/feature-first-image-words-page.png)
-![Second image words page](assets/images/feature-second-image-words-page.png)
-
-- The **footer** that is visible on all pagesa and contains links to social media accounts and copyrights info. 
-![Footer](assets/images/feature-footer.png)
 
 ### **Features left to implement**
-- Contact page - we want to implement a contact page for users to contact the page for info on Hebrew language and civilization and for Hebrew classes we are organising regularly.
-- Resource page with info on audio and video resources people can use to learn Hebrew language and articles.
+- Currently the questions are fetched automatically from the game.js file where they are stored. For the sake of this website, we've only added 5 questions per each category but in the future, a goos feature to implement is to fetch questions directly from an API trivia game database which will allow us more questions to the game. 
 
 ## Design
 - ### **Color Theme and imagery**
-[Adobe Color](https://color.adobe.com/create/color-wheel) was used to extract the main three colors of the website: blue, cream and dark brown. The colors were extracted using images on the website. These are old Hebrew manuscripts and Hebrew illuminated manuscripts that show the beauty of the Hebrew alphabet and Jewish art. 
+[Adobe Color](https://color.adobe.com/create/color-wheel) was used to extract the color theme for the website.
+The colors were extracted using the 4 images on the website. This provides consistency all throughout the website. 
 
 - ### **Typography**
-For the main text, 'Montserrat' font is used with a fall-back on sans-serif. For headings, navigation bar and footer, 'Arima Madurai' font is used with a fallback on cursive.
+'Scheherazade New' style is used on the whole website, with a fall-back on serif.
 
 ## **Technologies**
 #### **Languages Used**
 - [HTML](https://en.wikipedia.org/wiki/HTML5) 
 - [CSS](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript) 
+
 #### **Frameworks, Libraries & Programs Used**
 
-1. [Google Fonts](https://fonts.google.com/) was used to import fonts 'Montserrat'and 'Arima Madurai' that are used throughout the website. 
+1. [Google Fonts](https://fonts.google.com/) was used to import the font 'Scheherazade New'.
 
 2. [Adobe color](https://color.adobe.com/mythemes) was used to extract the colors used on the website. 
 3. [Git](https://git-scm.com/) was used to used to edit the code on the Gitpod terminal, to commit to Git and Push to GitHub.
