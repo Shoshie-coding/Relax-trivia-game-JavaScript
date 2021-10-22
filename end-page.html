@@ -19,42 +19,64 @@
     <title>End game page</title>
 </head>
 
-<!--End page-->
-<div class="main-container">
-    <div id="end-game" class="flex-center flex-column">
-        <h1 id="finalScore"></h1>
-        <form>
-            <input type="text" name="username" id="username" placeholder="Username">
-            <button type="submit" class="btn" id="save-score-btn" onclick="saveHighScore(event)" disabled>
-                Save
-            </button>
-        </form>
-        <a class="btn" href="./">Go to Home page</a>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Homepage</a>
+                </li>
+                <li class="nav-item">
+                    <a href="category.html" class="nav-link">Chose category</a>
+                </li>
+                <li class="nav-item">
+                    <a href="scores.html" class="nav-link">Scores</a>
+                </li>
+            </ul>
+            <div class="nav-menu-hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!--End page-->
+    <div class="main-container">
+        <div id="end-game" class="flex-center flex-column">
+            <h1 id="finalScore"></h1>
+            <form>
+                <input type="text" name="username" id="username" placeholder="Username">
+                <button type="submit" class="btn" id="save-score-btn" onclick="saveHighScore(event)" disabled>
+                    Save
+                </button>
+            </form>
+            <a class="btn" href="./">Go to Home page</a>
+        </div>
     </div>
-</div>
 
-<script src="assets/js/end-game.js"></script>
+    <script src="assets/js/end-game.js"></script>
 
-<!--Footer-->
-<footer class="main-footer">
-    <ul>
-        <li>
-            <a href="https://twitter.com/" target="_blank" rel="noopener"
-                aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i>
-            </a>
-        </li>
-        <li>
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener"
-                aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i>
-            </a>
-        </li>
-        <li>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener"
-                aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram"></i>
-            </a>
-        </li>
-    </ul>
-</footer>
+    <!--Footer-->
+    <footer class="main-footer">
+        <ul>
+            <li>
+                <a href="https://twitter.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
 
 </body>
 
