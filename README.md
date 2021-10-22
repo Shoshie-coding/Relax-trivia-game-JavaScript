@@ -4,7 +4,7 @@ The goal of this game is for people to test their knowledge on 4 different subje
 
 You can view the live website [here](https://shoshie-coding.github.io/Relax-trivia-game-JavaScript/).
 
-![Amiresponsive screenshot](assets/images/ami-responsive-screenshot.png) 
+![Amiresponsive screenshot](assets/images/am-i-responsive-screenshot.png) 
 
 
 ## **Features**
@@ -68,7 +68,7 @@ The colors were extracted using the 4 images on the website. This provides consi
 
 #### HTML code validator 
 The website passed all code validations
-![HTML code validator](assets/images/html-validator-index.png)
+![HTML code validator](assets/images/html-.png)
 ![HTML code validator](assets/images/html-validator-alphabet.png)
 ![HTML code validator](assets/images/html-validator-words.png)
 
